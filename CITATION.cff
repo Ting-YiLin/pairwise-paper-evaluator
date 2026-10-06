@@ -4,3 +4,4 @@ title: "Pairwise Paper Evaluator"
 type: software
 version: 1.0.0
 repository-code: "https://github.com/Ting-YiLin/pairwise-paper-evaluator"
+license: MIT

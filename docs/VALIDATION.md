@@ -2,7 +2,7 @@
 
 ## Current observed evidence
 
-The frozen project records contain 14 position-reversal audit judgments, all directionally stable, with 0 observed flips. The audits were not probability-sampled; this count is a description of recorded cases, not an estimate of a general zero-bias rate. At least one boundary comparison produced a meaningful cross-model disagreement, so near-tie outcomes can depend on evaluator family.
+The frozen project records contain **14 / 14 recorded position-reversal audits that preserved substantive direction** (0 observed flips). The audits were not probability-sampled; this count describes these recorded cases and cannot estimate a general positional-bias rate. At least one boundary comparison produced a meaningful cross-model disagreement, so near-tie outcomes can depend on evaluator family.
 
 These observations support a limited claim about practical internal stability in those recorded comparisons. They do not establish general reliability or validity.
 
