@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "edges": [
+    {"pair_id":"P01-P02","left":"P01","right":"P02","overall":"left","confidence":"high","near_tie":false,"position_variant":"original","decision_hinge":"P01 directly tests the stated forecasting question.","evidence_locators":["P01: Methods §2","P02: Methods §2"],"validity_gate":{"concern_type":"none","severity":"none","centrality":"supporting","note":"No blocking concern in this invented example."}},
+    {"pair_id":"P01-P03","left":"P01","right":"P03","overall":"tie","confidence":"low","near_tie":true,"position_variant":"original","decision_hinge":"The two invented studies provide similarly specific evidence.","evidence_locators":["P01: Results §3","P03: Results §3"]},
+    {"pair_id":"P01-P02","left":"P02","right":"P01","overall":"right","confidence":"medium","near_tie":false,"position_variant":"reversed","decision_hinge":"The same forecasting test remains the deciding difference.","evidence_locators":["P01: Methods §2","P02: Methods §2"]}
+  ]
+}

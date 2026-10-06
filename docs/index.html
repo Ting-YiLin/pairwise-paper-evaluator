@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pairwise Paper Evaluator</title>
+<style>
+:root{color-scheme:light;--ink:#17222b;--muted:#50616d;--line:#d9e2e7;--accent:#176b62;--paper:#f4f7f6}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:900px;margin:auto;padding:4rem 1.5rem 5rem}.eyebrow{color:var(--accent);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}h1{font-size:clamp(2.5rem,7vw,4.7rem);line-height:1.05;letter-spacing:-.04em;max-width:760px;margin:.6rem 0 1rem}h2{margin-top:2.8rem;font-size:1.45rem}p{max-width:720px}.lede{font-size:1.25rem;color:var(--muted)}.links{display:flex;gap:.8rem;flex-wrap:wrap;margin:2rem 0}.links a{background:var(--accent);color:white;padding:.7rem 1rem;border-radius:7px;text-decoration:none;font-weight:650}.links a.secondary{background:white;color:var(--accent);border:1px solid var(--line)}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:1rem 1.3rem;margin:1.4rem 0}.note{border-left:4px solid var(--accent)}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem}.step{background:white;border:1px solid var(--line);border-radius:10px;padding:1rem}.step b{color:var(--accent)}a{color:var(--accent)}footer{margin-top:3rem;color:var(--muted);font-size:.9rem}</style>
+</head><body><main>
+<div class="eyebrow">Research workflow · Version 1.0.0</div>
+<h1>Compare papers with evidence you can inspect.</h1>
+<p class="lede">A reproducible, AI-assisted pairwise workflow for making manuscript comparisons more structured, traceable, and stability-audited.</p>
+<div class="links"><a href="https://github.com/Ting-YiLin/pairwise-paper-evaluator">View the GitHub repository</a><a class="secondary" href="QUICKSTART.md">Read the quickstart</a></div>
+<section class="card note"><strong>What the current evidence says.</strong><br>In frozen project records, all 14 recorded position-reversal audits preserved the substantive direction (0 observed flips). These audits were not probability-sampled and do not estimate a general positional-bias rate.</section>
+<h2>How it works</h2><div class="steps"><div class="step"><b>01 · Prepare</b><br>Define the comparison purpose and freeze evidence cards.</div><div class="step"><b>02 · Compare</b><br>Record a verdict, decision hinge, confidence, and source locators for each pair.</div><div class="step"><b>03 · Audit</b><br>Reverse selected pairs to inspect stability. A reversal is an audit, not an extra vote.</div></div>
+<h2>Use the right interpretation</h2><p>This workflow does not measure objective paper quality, predict acceptance, or establish a universal ranking. The current project evidence mainly describes practical internal stability. It does not include human-expert ground truth, and model families can disagree on near-tie comparisons.</p>
+<p><a href="METHOD.md">Method</a> · <a href="VALIDATION.md">Validation evidence</a> · <a href="LIMITATIONS.md">Limitations</a> · <a href="https://github.com/Ting-YiLin/pairwise-paper-evaluator">Source code</a></p>
+<footer>Use only manuscripts you are legally entitled to access. The documents remain local; this repository does not include benchmark papers.</footer>
+</main></body></html>

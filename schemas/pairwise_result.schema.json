@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pairwise Paper Evaluator result",
+  "type": "object",
+  "required": ["schema_version", "edges"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pair_id", "left", "right", "overall", "confidence", "near_tie", "position_variant", "decision_hinge", "evidence_locators"],
+        "properties": {
+          "pair_id": {"type": "string", "minLength": 1},
+          "left": {"type": "string", "minLength": 1},
+          "right": {"type": "string", "minLength": 1},
+          "overall": {"enum": ["left", "right", "tie"]},
+          "confidence": {"enum": ["high", "medium", "low"]},
+          "near_tie": {"type": "boolean"},
+          "position_variant": {"enum": ["original", "reversed"]},
+          "decision_hinge": {"type": "string"},
+          "evidence_locators": {"type": "array", "items": {"type": "string"}},
+          "validity_gate": {
+            "type": "object",
+            "properties": {
+              "concern_type": {"enum": ["identification", "inference_dependence", "measurement", "generalization", "reproducibility", "other", "none"]},
+              "severity": {"enum": ["blocking", "material", "non_blocking", "none"]},
+              "centrality": {"enum": ["core", "supporting", "peripheral"]},
+              "note": {"type": "string"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
